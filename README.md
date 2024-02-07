@@ -1,3 +1,6 @@
+Renombrar dockerignore y gitignore y ponerle un punto delante
+
+
 # Docker & Node.js: Aplicación de Nodejs & Express en Contenedor de Docker
 
 Crea una imagen de Docker utilizando una aplicación de Node.js y ejecuta un contenedor (container) a partir de dicha imagen, conoce cómo utilizar Docker de forma introductoria, para crear imágenes, contenedores y aprende a usar Docker para administrar tus aplicaciones y sus dependencias.
