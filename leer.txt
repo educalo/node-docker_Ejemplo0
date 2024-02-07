@@ -1,0 +1,31 @@
+1.- Mirar package.json, dependencia morgan para ver las URL que se van solicitando en cada momento en la linea de comandos
+2.- Express es un servidor web para node
+
+
+3.- Mirar fichero utils/passwordGenerator.js
+4.- Mirar fichero index.js dentro de la carpeta routes
+
+5.- instalar la aplicacion npm install
+6.- levantar la aplicacion npm start
+
+
+7.- Instalar docker Desktop
+8.- En una terminal poniendo docker images nos lista todas las imagenes que tenemos descargadas para ser usadas
+9.- en la pagina web hubdocker puedo coger imagenes ya creadas
+
+10.- Se crea el fichero Dockerfile
+11.- En una terminal en el mismo nivel que Dockerfile ponemos los siguiente para crear la imagen:  docker build -t docker-nodejs .    El último punto para busque el Dockerfile en esta misma ruta
+12.- Ahora ya tengo creada una imagen den dockerhub
+13.- Puedo comprobar la imagen que hay creada con: docker images
+13.- para correr un contenedor a través de la imagen: docker run docker-nodejs
+
+14.- En un navegador poniendo localhost:3000/generatePasswords/50 comprobamos que no funciona
+15.- Mi aplicación esta corriendo dentro del contenedor y tiene un puerto diferente al ser un contenedor una estructura interna
+
+16.- docker ps, para ver los contenederos que hay corriendo
+17.- Para parar un contenedor: "docker stop y el id o el name del contenedor"
+18.- Ahora si puedo borrar ese contenedor: docker rm id
+
+19.- Para solucinarlo lo de los puertos internos ponemos: docker run --name DockerNodejsApp 4000:3000 docker-nodejs
+20.- 4000 puerto externo y 3000 puerto interno de docker
+21.- Ahora si pongo localhost:4000/generatePasswords/50
